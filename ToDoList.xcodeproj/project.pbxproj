@@ -14,6 +14,7 @@
 		9D359BAD1E8B3C20003453DE /* ToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D359BAC1E8B3C20003453DE /* ToDoListTests.swift */; };
 		9D359BB81E8B3C20003453DE /* ToDoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D359BB71E8B3C20003453DE /* ToDoListUITests.swift */; };
 		9D359BC61E8B435B003453DE /* TodoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D359BC51E8B435B003453DE /* TodoTableViewController.swift */; };
+		9D359BC81E8B4D57003453DE /* TodoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D359BC71E8B4D57003453DE /* TodoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		9D359BB71E8B3C20003453DE /* ToDoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITests.swift; sourceTree = "<group>"; };
 		9D359BB91E8B3C20003453DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D359BC51E8B435B003453DE /* TodoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoTableViewController.swift; sourceTree = "<group>"; };
+		9D359BC71E8B4D57003453DE /* TodoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				9D359BA01E8B3C1F003453DE /* LaunchScreen.storyboard */,
 				9D359BA31E8B3C1F003453DE /* Info.plist */,
 				9D359BC51E8B435B003453DE /* TodoTableViewController.swift */,
+				9D359BC71E8B4D57003453DE /* TodoTableViewCell.swift */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D359BC81E8B4D57003453DE /* TodoTableViewCell.swift in Sources */,
 				9D359B981E8B3C1F003453DE /* AppDelegate.swift in Sources */,
 				9D359BC61E8B435B003453DE /* TodoTableViewController.swift in Sources */,
 			);

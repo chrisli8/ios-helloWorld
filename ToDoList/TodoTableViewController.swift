@@ -38,10 +38,11 @@ class TodoTableViewController: UITableViewController {
 
    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TodoCell", for: indexPath)
+        let cell: TodoTableViewCell = tableView.dequeueReusableCell(withIdentifier: "TodoCell", for: indexPath) as! TodoTableViewCell
 
         // Configure the cell...
         cell.textLabel?.text = "My first task"
+        cell.myLabel.text = "Test"
 
         return cell
     }
