@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		9D359B981E8B3C1F003453DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D359B971E8B3C1F003453DE /* AppDelegate.swift */; };
-		9D359B9A1E8B3C1F003453DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D359B991E8B3C1F003453DE /* ViewController.swift */; };
 		9D359B9D1E8B3C1F003453DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D359B9B1E8B3C1F003453DE /* Main.storyboard */; };
 		9D359B9F1E8B3C1F003453DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D359B9E1E8B3C1F003453DE /* Assets.xcassets */; };
 		9D359BA21E8B3C1F003453DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D359BA01E8B3C1F003453DE /* LaunchScreen.storyboard */; };
 		9D359BAD1E8B3C20003453DE /* ToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D359BAC1E8B3C20003453DE /* ToDoListTests.swift */; };
 		9D359BB81E8B3C20003453DE /* ToDoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D359BB71E8B3C20003453DE /* ToDoListUITests.swift */; };
+		9D359BC61E8B435B003453DE /* TodoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D359BC51E8B435B003453DE /* TodoTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		9D359B941E8B3C1F003453DE /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D359B971E8B3C1F003453DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9D359B991E8B3C1F003453DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9D359B9C1E8B3C1F003453DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D359B9E1E8B3C1F003453DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D359BA11E8B3C1F003453DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		9D359BB31E8B3C20003453DE /* ToDoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D359BB71E8B3C20003453DE /* ToDoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITests.swift; sourceTree = "<group>"; };
 		9D359BB91E8B3C20003453DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D359BC51E8B435B003453DE /* TodoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				9D359B971E8B3C1F003453DE /* AppDelegate.swift */,
-				9D359B991E8B3C1F003453DE /* ViewController.swift */,
 				9D359B9B1E8B3C1F003453DE /* Main.storyboard */,
 				9D359B9E1E8B3C1F003453DE /* Assets.xcassets */,
 				9D359BA01E8B3C1F003453DE /* LaunchScreen.storyboard */,
 				9D359BA31E8B3C1F003453DE /* Info.plist */,
+				9D359BC51E8B435B003453DE /* TodoTableViewController.swift */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -259,8 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D359B9A1E8B3C1F003453DE /* ViewController.swift in Sources */,
 				9D359B981E8B3C1F003453DE /* AppDelegate.swift in Sources */,
+				9D359BC61E8B435B003453DE /* TodoTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
