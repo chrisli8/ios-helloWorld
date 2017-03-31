@@ -10,6 +10,7 @@ import UIKit
 
 class TodoTableViewCell: UITableViewCell {
     @IBOutlet weak var myLabel: UILabel!
+    @IBOutlet weak var aLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

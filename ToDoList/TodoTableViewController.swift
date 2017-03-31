@@ -10,9 +10,12 @@ import UIKit
 
 class TodoTableViewController: UITableViewController {
 
+    var todoItems = ["Groceries", "Go to the bank", "Do my iOS homework"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.navigationItem.title = "INFO 449 Todo List"
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -33,7 +36,7 @@ class TodoTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return self.todoItems.count
     }
 
    
@@ -41,12 +44,25 @@ class TodoTableViewController: UITableViewController {
         let cell: TodoTableViewCell = tableView.dequeueReusableCell(withIdentifier: "TodoCell", for: indexPath) as! TodoTableViewCell
 
         // Configure the cell...
-        cell.textLabel?.text = "My first task"
-        cell.myLabel.text = "Test"
+        let rowIndex = indexPath.row
+        cell.aLabel.text = self.todoItems[rowIndex]
+        
+//        cell.textLabel?.text = "My first task"
+//        cell.myLabel.text = "Test"
 
         return cell
     }
 
+    @IBAction func addTaskButtonPressed(_ sender: Any) {
+        print("got here")
+        
+        // creates an instance of view controller
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "AddTaskViewController")
+        self.navigationController?.present(vc, animated: true, completion: nil)
+    }
+    
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
